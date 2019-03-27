@@ -258,3 +258,10 @@ a {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
+
+#footer-logo {
+  height: 3em;
+  width: 9em;
+  margin-top: -5em;
+  margin-bottom: -4em;
+}
