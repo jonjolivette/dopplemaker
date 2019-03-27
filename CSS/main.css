@@ -1,11 +1,9 @@
-<!-- /* ========================================================================================
+/* ========================================================================================
 * Authors : Jonathan Jolivette | Heggy Castaneda | Sean Kushi | Nathan Nijensohn
 * Project Name : DOPPELMAKER LANDING PAGE
 * File : Doppelmaker INDEX CSS Files
 * App Version : 1.0
-* ======================================================================================== */ -->
-
-
+* ======================================================================================== */
 
 /* ++++++ GLOBAL CSS ++++++ */
 
@@ -81,4 +79,29 @@ body {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+}
+
+
+/*  ++++++ Thank you Gift email button SECTION +++++++ */
+#subscribe-button {
+  border-radius: 20px;
+  background-color: rgb(9, 64, 131);
+  border: none;
+  color: rgb(230, 226, 211);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+a {
+  color: rgb(230, 226, 211);
+}
+
+#subscribe-button:hover {
+  opacity: 1;
 }
