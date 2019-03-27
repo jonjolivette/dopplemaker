@@ -1,4 +1,6 @@
 // resource https://codepen.io/heggy231/pen/LaozBQ?page=1&
+// [] on timer 10 sec stop confetti
+// [] bring smurf confetti
 let confettiColor = [], confetti = [];
 
 function setup() {
@@ -9,9 +11,14 @@ function setup() {
   }
 }
 
+var confettiStopper=0;
+
 function draw() {
   background(51);
-	
+  // counts how many draw() it calls and stops when it hits 500
+  confettiStopper++;
+  if (confettiStopper > 500) return;
+
 	for (let i = 0; i < confetti.length / 2; i++) {
     confetti[i].confettiDisplay();
 
