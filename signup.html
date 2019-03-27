@@ -55,12 +55,18 @@
   pattern="^[A-Za-z][A-Za-z]+$"
   required>
 </div>
+<!-- ############ END of FIRST Name field form ############ -->
 <!-- ############### LAST Name field form ########## -->
 <div class="mc-field-group">
 	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
 </label>
-	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+  <input type="text" value="" name="LNAME" class="required" id="mce-LNAME"
+  title="A name cannot contain a number or special character and must be at least two letters" 
+  pattern="^[A-Za-z][A-Za-z]+$"
+  required>
+  >
 </div>
+<!-- ############### END of LAST Name field form ########## -->
 <div class="mc-field-group input-group">
     <strong>Email Format </strong>
     <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"><label for="mce-EMAILTYPE-0">html</label></li>
