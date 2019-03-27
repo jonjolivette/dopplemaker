@@ -1,0 +1,73 @@
+.our-news-letter {
+  padding: 100px 0px;
+  background-image: url("../MEDIA/racially-ambigious-twins-larger.jpg");
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-news-letter:after {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+}
+
+.our-news-letter h2 {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a89f35;
+}
+
+.our-news-letter input[type="text"] {
+  display: block;
+  width: 35%;
+  text-align: center;
+  margin: 0px auto;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  background: none;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+}
+
+.our-news-letter input[type="submit"] {
+  margin-top: 20px;
+  display: inline-block;
+  color: #ccc;
+  background: transparent;
+  padding: 10px 25px;
+  border: 1px solid rgba(168, 159, 53, 0.5);
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  width: 100px;
+}
+
+.our-news-letter input[type="submit"]:hover {
+  background: #a89f35;
+  color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Mobile Layout Up To: 766px. */
+
+@media only screen and (max-width: 767px) {
+  .our-news-letter input[type="text"] {
+    width: 90%;
+  }
+  .our-news-letter h2 {
+    font-size: 16px;
+  }
+}
