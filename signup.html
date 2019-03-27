@@ -30,6 +30,7 @@
 <!-- 
   resource: https://css-tricks.com/form-validation-part-4-validating-mailchimp-subscribe-form/
   The type for the email field is already set to email, which is great. Let's also add the required attribute, and a pattern to force emails to include a TLD (the .com part of an address). We should also include a title letting people know they have to have a TLD.
+  - title="The domain portion of the email address is invalid (the portion after the @)." is the error message we get when we put wrong email
   [ ] An email address must contain exactly one @
   [ ] An email must contain exactly one period (.)
  -->
@@ -38,19 +39,23 @@
   pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" 
   required>
 </div>
+<!-- ############ FIRST Name field form ############ -->
 <div class="mc-field-group">
 	<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
 </label>
 <!-- 
+  resource: https://regexr.com/
   [] A name cannot contain a number
   [] A name cannot contain a special character
   [] A name must be at least two letter 
+  ^ is beginning of text, $ is end of text
 -->
-
   <input type="text" value="" name="FNAME" class="required" id="mce-FNAME"
-  
-  >
+  title="A name cannot contain a number or special character and must be at least two letters" 
+  pattern="^[A-Za-z][A-Za-z]+$"
+  required>
 </div>
+<!-- ############### LAST Name field form ########## -->
 <div class="mc-field-group">
 	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
 </label>
