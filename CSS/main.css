@@ -148,7 +148,7 @@ p {
   height: 100%;
   min-height: 500px;
   position: relative;
-  background-image: url(../media/party_business.jpg);
+  background-image: url("../media/party_business.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
