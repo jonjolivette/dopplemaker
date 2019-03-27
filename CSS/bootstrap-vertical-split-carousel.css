@@ -48,9 +48,11 @@
 /**/
 #img {
   object-fit: cover !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  vertical-align: top !important;
+  *//* max-width: 100% !important; */
+    max-height: 119% !important;
+  height: 700px;
+  /* height: 100%; */
+  width: auto;
   margin: -45px !important;
 }
 /* .vertical-split-carousel {

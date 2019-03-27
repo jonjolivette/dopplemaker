@@ -24,6 +24,41 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  line-height: 32px;
+}
+
 /* ++++++ MAILCHIMP SECTION ++++++ */
 
 #mc_embed_signup {
@@ -92,6 +127,76 @@ body {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+}
+
+/*  === PARALLAX SECTIONS === */
+#one h1,
+#two h1,
+#three h1 {
+  padding: 10%;
+  color: goldenrod;
+  margin: 0 auto;
+  text-align: center;
+  /* vertical-align: middle; */
+}
+
+#one {
+  background-image: url("../MEDIA/party_business.jpg");
+}
+
+.info-area {
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+  background-image: url(../MEDIA/party_business.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.info-area:before {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+}
+.caption-bg {
+  background: linear-gradient(
+    to right,
+    #856404 0%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 50%,
+    rgb(133, 100, 4) 100%
+  );
+  opacity: 0.7;
+}
+
+#caption-one {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3em;
+  color: goldenrod;
+  opacity: 1 !important;
+  margin: 0;
+}
+
+.caption p {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 15px;
+  position: relative;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+.caption h1,
+.caption p {
+  color: #bbb;
 }
 
 /*  ++++++ Thank you Gift email button SECTION +++++++ */

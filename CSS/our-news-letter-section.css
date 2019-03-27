@@ -23,6 +23,7 @@
 .our-news-letter h2 {
   font-size: 18px;
   margin-bottom: 30px;
+  margin-top: 2em;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #a89f35;
@@ -43,6 +44,7 @@
 
 .our-news-letter input[type="submit"] {
   margin-top: 20px;
+  margin-bottom: 3em;
   display: inline-block;
   color: #ccc;
   background: transparent;
